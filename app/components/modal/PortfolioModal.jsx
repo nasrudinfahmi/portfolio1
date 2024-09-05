@@ -9,9 +9,9 @@ function PortfolioModal({ isOpenedModal, setIsOpenedModal, portfolio }) {
     <div
       className={`${isOpenedModal ? 'scale-100 opacity-100' : 'scale-0 opacity-0'} flex fixed inset-0 z-[999999] transition-all duration-200 bg-slate-700/50`}
     >
-      <div className="flex flex-col relative w-11/12 h-[80vh] min-[500px]:w-4/5 min-[500px]:h-[75vh] md:w-2/3 md:h-[70vh] lg:w-3/5 xl:w-1/2 sm:w-[75%] p-5 md:p-10 overflow-y-auto rounded-xl m-auto shadow-xl bg-white z-[999999999]">
+      <div className="min-h-max flex flex-col relative w-11/12 max-h-[80vh] min-[500px]:w-4/5 min-[500px]:max-h-[75vh] md:w-2/3 md:max-h-[70vh] lg:w-3/5 xl:w-1/2 sm:w-[75%] p-5 md:p-10 overflow-y-auto rounded-xl m-auto shadow-xl bg-white z-[999999999]">
         <BtnClose
-          className="sticky top-0 ms-auto aspect-square translate-x-5 -translate-y-6 py-1.5"
+          className="sticky top-0 ms-auto aspect-square py-1.5"
           onClick={() => setIsOpenedModal(false)}
         />
         <article id="modal-portfolio" className="container mt-5">

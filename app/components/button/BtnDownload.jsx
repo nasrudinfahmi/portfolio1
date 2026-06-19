@@ -4,7 +4,7 @@ import { handleDownload } from "@/app/services"
 
 function BtnDownload() {
   const handleDownloadCV = () => {
-    handleDownload('/CV/MUHAMMAD_NASRUDIN_FAHMI.pdf', 'MUHAMMAD_NASRUDIN_FAHMI.pdf')
+    handleDownload('/CV/Muhammad_Nasrudin_Fahmi.CV.pdf', 'MUHAMMAD_NASRUDIN_FAHMI.pdf')
       .catch(error => console.log('Error downloading CV: ', error.message))
   }
 
